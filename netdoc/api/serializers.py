@@ -30,6 +30,7 @@ class ArpTableEntrySerializer(NetBoxModelSerializer):
 
         model = ArpTableEntry
         fields = "__all__"
+        brief_fields = ("id", "url", "display", "ip_address", "interface", "description")
 
 
 class CredentialSerializer(NetBoxModelSerializer):
@@ -45,6 +46,7 @@ class CredentialSerializer(NetBoxModelSerializer):
 
         model = Credential
         fields = "__all__"
+        brief_fields = ("id", "url", "display", "name", "description")
 
 
 class DiagramSerializer(NetBoxModelSerializer):
@@ -60,6 +62,7 @@ class DiagramSerializer(NetBoxModelSerializer):
 
         model = Diagram
         fields = "__all__"
+        brief_fields = ("id", "url", "display", "name", "description")
 
 
 class DiscoverableSerializer(NetBoxModelSerializer):
@@ -74,6 +77,7 @@ class DiscoverableSerializer(NetBoxModelSerializer):
 
         model = Discoverable
         fields = "__all__"
+        brief_fields = ("id", "url", "display", "address", "description")
 
 
 class DiscoveryLogSerializer(NetBoxModelSerializer):
@@ -88,6 +92,7 @@ class DiscoveryLogSerializer(NetBoxModelSerializer):
 
         model = DiscoveryLog
         fields = "__all__"
+        brief_fields = ("id", "url", "display", "status", "description")
 
 
 class MacAddressTableEntrySerializer(NetBoxModelSerializer):
@@ -101,6 +106,7 @@ class MacAddressTableEntrySerializer(NetBoxModelSerializer):
 
         model = MacAddressTableEntry
         fields = "__all__"
+        brief_fields = ("id", "url", "display", "mac_address", "interface", "description")
 
 
 class RouteTableEntrySerializer(NetBoxModelSerializer):
@@ -114,3 +120,4 @@ class RouteTableEntrySerializer(NetBoxModelSerializer):
 
         model = RouteTableEntry
         fields = "__all__"
+        brief_fields = ("id", "url", "display", "destination", "next_hop", "description")

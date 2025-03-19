@@ -12,13 +12,11 @@ credential_buttons = [
         link="plugins:netdoc:credential_add",
         title="Add",
         icon_class="mdi mdi-plus-thick",
-        color=ButtonColorChoices.GREEN,
     ),
     PluginMenuButton(
         link="plugins:netdoc:credential_import",
         title="Import",
         icon_class="mdi mdi-upload",
-        color=ButtonColorChoices.CYAN,
     ),
 ]
 
@@ -27,7 +25,6 @@ diagram_buttons = [
         link="plugins:netdoc:diagram_add",
         title="Add",
         icon_class="mdi mdi-plus-thick",
-        color=ButtonColorChoices.GREEN,
     ),
 ]
 
@@ -36,13 +33,11 @@ discoverable_buttons = [
         link="plugins:netdoc:discoverable_add",
         title="Add",
         icon_class="mdi mdi-plus-thick",
-        color=ButtonColorChoices.GREEN,
     ),
     PluginMenuButton(
         link="plugins:netdoc:discoverable_import",
         title="Import",
         icon_class="mdi mdi-upload",
-        color=ButtonColorChoices.CYAN,
     ),
 ]
 
